@@ -96,7 +96,7 @@ The next architecture layer focuses on:
 | Context intelligence | Planned |
 | Reusable skills/workflows | Planned |
 | Controlled worker agents | Later stage |
-| Benchmark harness | Planned / expanding |
+| Benchmark harness | Initial public v0 available |
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and [docs/ROADMAP.md](docs/ROADMAP.md).
 
@@ -109,6 +109,8 @@ SIA should be measured against the **same local model on the same hardware and t
 
 Useful metrics include task success, tool-call success, invalid arguments, repair count, verification failures, false completion, runtime, and resource usage.
 
+A small public-safe benchmark harness is available in [`benchmarks/v0`](benchmarks/v0). It defines fixed generic reliability cases, a result schema, and a dependency-free scorer. **No comparative SIA performance numbers are published yet**; those should only be added after controlled runs using the same model, hardware, task set, and evaluation conditions.
+
 ## Repository Scope
 
 This public repository is meant to communicate the engineering direction of SIA without exposing its private production code.
@@ -118,6 +120,7 @@ Included:
 - reliability design notes
 - safe illustrative examples
 - roadmap and benchmarking methodology
+- public-safe benchmark cases, result format, and scorer
 
 Not included:
 - proprietary runtime implementation

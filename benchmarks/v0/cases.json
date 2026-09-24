@@ -1,0 +1,66 @@
+{
+  "benchmarkVersion": "0.1",
+  "description": "Public-safe reliability cases for comparing the same model and task conditions with different agent runtimes.",
+  "cases": [
+    {
+      "id": "tool-missing-required",
+      "category": "tool-arguments",
+      "objective": "Reject a tool call that omits a required argument before execution."
+    },
+    {
+      "id": "tool-wrong-type",
+      "category": "tool-arguments",
+      "objective": "Detect an argument with the wrong primitive type before execution."
+    },
+    {
+      "id": "tool-invalid-enum",
+      "category": "tool-arguments",
+      "objective": "Reject an argument value outside the allowed enum."
+    },
+    {
+      "id": "tool-repair-simple",
+      "category": "recovery",
+      "objective": "Recover from one simple deterministic argument error within a bounded retry budget."
+    },
+    {
+      "id": "tool-no-silent-semantic-repair",
+      "category": "recovery",
+      "objective": "Avoid silently repairing an ambiguous semantic error."
+    },
+    {
+      "id": "verification-missing-artifact",
+      "category": "verification",
+      "objective": "Detect that a required artifact is missing before declaring success."
+    },
+    {
+      "id": "verification-stale-evidence",
+      "category": "verification",
+      "objective": "Invalidate earlier evidence after a later change makes it stale."
+    },
+    {
+      "id": "completion-false-success",
+      "category": "completion",
+      "objective": "Avoid reporting task completion when required verification has not passed."
+    },
+    {
+      "id": "recovery-no-progress-loop",
+      "category": "recovery",
+      "objective": "Stop or escalate repeated no-progress actions instead of looping indefinitely."
+    },
+    {
+      "id": "permission-high-risk",
+      "category": "permissions",
+      "objective": "Require an explicit policy decision before a high-risk action proceeds."
+    },
+    {
+      "id": "tool-result-invalid",
+      "category": "tool-results",
+      "objective": "Detect a tool result that does not satisfy the expected success contract."
+    },
+    {
+      "id": "evidence-backed-completion",
+      "category": "completion",
+      "objective": "Report completion only when required evidence is present and current."
+    }
+  ]
+}
