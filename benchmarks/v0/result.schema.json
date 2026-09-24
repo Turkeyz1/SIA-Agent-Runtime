@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Turkeyz1/SIA-Agent-Runtime/benchmarks/v0/result.schema.json",
+  "title": "SIA Public Reliability Benchmark Result",
+  "type": "object",
+  "required": ["benchmarkVersion", "label", "environment", "cases"],
+  "properties": {
+    "benchmarkVersion": { "const": "0.1" },
+    "label": { "type": "string", "minLength": 1 },
+    "environment": {
+      "type": "object",
+      "required": ["model", "hardware", "taskSet"],
+      "properties": {
+        "model": { "type": "string", "minLength": 1 },
+        "hardware": { "type": "string", "minLength": 1 },
+        "taskSet": { "const": "benchmarks/v0/cases.json" },
+        "runtime": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "taskSuccess",
+          "toolCalls",
+          "successfulToolCalls",
+          "invalidArguments",
+          "repairs",
+          "verificationFailures",
+          "falseCompletion",
+          "elapsedMs"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "taskSuccess": { "type": "boolean" },
+          "toolCalls": { "type": "integer", "minimum": 0 },
+          "successfulToolCalls": { "type": "integer", "minimum": 0 },
+          "invalidArguments": { "type": "integer", "minimum": 0 },
+          "repairs": { "type": "integer", "minimum": 0 },
+          "verificationFailures": { "type": "integer", "minimum": 0 },
+          "falseCompletion": { "type": "boolean" },
+          "elapsedMs": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
