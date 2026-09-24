@@ -95,9 +95,9 @@ Focus:
 
 ## Benchmark track
 
-A benchmark harness will compare the same model with and without SIA under the same environment.
+An initial public-safe benchmark harness is available in `benchmarks/v0`. It is designed to compare the same model with and without SIA under controlled conditions while keeping proprietary runtime details private.
 
-Planned measurements:
+Current v0 measurements:
 - end-to-end task success
 - tool-call success
 - invalid arguments
@@ -106,3 +106,7 @@ Planned measurements:
 - false completion
 - elapsed time
 - resource usage
+
+Status: **Harness available; controlled comparative results pending.**
+
+Public benchmark results should be published only after an actual controlled run. Synthetic or placeholder values must not be presented as evidence of SIA performance.
