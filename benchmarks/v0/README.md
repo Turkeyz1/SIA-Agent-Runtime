@@ -50,7 +50,7 @@ Other runtime conditions should also be kept as stable as practical and document
 
 Each run should produce a JSON document matching `result.schema.json`.
 
-Minimal shape:
+Skeleton shape (not schema-valid until measured case records are added):
 
 ```json
 {
@@ -67,7 +67,7 @@ Minimal shape:
 }
 ```
 
-Populate `cases` with measured observations. Do not publish placeholder values as benchmark results.
+Populate `cases` with measured observations before scoring. Do not publish placeholder values as benchmark results.
 
 ## Scoring
 
