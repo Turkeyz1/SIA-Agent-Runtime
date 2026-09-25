@@ -111,6 +111,14 @@ Useful metrics include task success, tool-call success, invalid arguments, repai
 
 A small public-safe benchmark harness is available in [`benchmarks/v0`](benchmarks/v0). It defines fixed generic reliability cases, a result schema, and a dependency-free scorer. **No comparative SIA performance numbers are published yet**; those should only be added after controlled runs using the same model, hardware, task set, and evaluation conditions.
 
+
+## Progress Reports
+
+Follow SIA's AI-native development journey through simple public progress reports:
+
+- [Report #001 — English](reports/001-ai-native-development-report.en.md)
+- [Report #001 — العربية](reports/001-ai-native-development-report.ar.md)
+
 ## Repository Scope
 
 This public repository is meant to communicate the engineering direction of SIA without exposing its private production code.
