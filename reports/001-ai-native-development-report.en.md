@@ -18,6 +18,37 @@ The AI handles much of:
 
 **Design → Code → Debugging → Repair → Verification**
 
+## Why SIA Started
+
+SIA began from a practical hardware limitation.
+
+Large local models can be powerful, but they are often too slow or too demanding to run comfortably on ordinary hardware. Instead of treating that as a dead end, the project explored a different question:
+
+> **What if a smaller model could become much more useful by giving it a better system around it?**
+
+That idea became one of the foundations of SIA.
+
+Instead of depending only on a larger model, SIA tries to move more capability into the runtime itself through:
+
+- structured planning
+- reliable tool use
+- schema validation
+- execution checks
+- project awareness
+- evidence collection
+- bounded repair
+- verification before completion
+
+The goal is not to pretend that a small model is as capable as a much larger one in every situation.
+
+The goal is to reduce how much raw model intelligence is required by giving the model a stronger operating system around it.
+
+In simple terms:
+
+> **Smaller model + better runtime + better tools + verification = a more useful local agent**
+
+This makes SIA especially relevant for people who want practical local AI without depending on expensive hardware or very large models.
+
 ## The Creator's Role
 
 AI writes much of the implementation, but SIA is not being developed without human contribution.
@@ -112,7 +143,7 @@ This suggests an important idea:
 
 ## Why This Project Matters
 
-SIA is not only an attempt to build another coding assistant. It is also an experiment in a different way of creating software.
+SIA is not only an attempt to build another coding assistant. It is also an experiment in a different way of creating software and in making smaller local models more capable through better agent architecture.
 
 Instead of a human writing every line of code, the workflow becomes:
 
