@@ -18,6 +18,35 @@ The AI handles much of:
 
 **Design → Code → Debugging → Repair → Verification**
 
+## The Creator's Role
+
+AI writes much of the implementation, but SIA is not being developed without human contribution.
+
+**Mahmoud Hisham** acts as the project's product and development director.
+
+His role includes:
+
+- defining what SIA should become
+- turning ideas into concrete requirements
+- choosing priorities and deciding what should be built next
+- testing real behavior instead of accepting AI output at face value
+- identifying failures, edge cases, and weak solutions
+- rejecting changes that do not meet the intended behavior
+- comparing models, tools, prompts, and workflows
+- deciding when a solution needs another repair cycle
+- protecting the public/private boundary of the project
+- translating lessons from other AI projects into improvements for SIA
+
+This means the project is not simply “AI generated.”
+
+It is better described as **AI-native development under human direction and verification**.
+
+Mahmoud also builds and publishes practical AI Skills and agent products on Capafy, covering areas such as AI content production, advertising workflows, and AI Skill/MCP security. Public examples include **Viral Shorts Factory**, **One Product → 30 Ads**, and **AgentShield**.
+
+That work matters to SIA because it provides experience with a broader question: how to turn AI capabilities into tools that are understandable, testable, useful, and safe enough for other people to use.
+
+> **The AI may generate the implementation, but the creator defines the product, evaluates the behavior, and decides what is good enough to ship.**
+
 ## What Have We Learned?
 
 One of the biggest lessons so far is simple:
@@ -125,7 +154,7 @@ and toward being able to say:
 - **Category:** Software Engineering Agent
 - **Development approach:** AI-Native Development
 - **Manual coding by the project owner:** None
-- **Human role:** Direction, requirements, testing, and approval
+- **Human role:** Product direction, requirements, workflow design, testing, verification, prioritization, and approval
 - **AI role:** Implementation, debugging, refactoring, and development assistance
 
 ### Long-Term Goal
